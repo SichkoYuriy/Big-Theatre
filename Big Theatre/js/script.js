@@ -6,6 +6,8 @@ $(document).ready(function () {
     });
 });
 
+
+
 new Swiper('.image-slider', {
     effect: "cards",
     cardsEffect: {
@@ -16,4 +18,19 @@ new Swiper('.image-slider', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     },
-      });
+});
+      
+new Swiper('.image-slider1', {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    initialSlide: 0,
+}); 
+
+new Swiper('.image-slider2', {
+    spaceBetween: 140,
+    slidesPerView: 4,
+    grid: {
+    rows: 2,
+    fill: 'row',
+  },
+}); 
